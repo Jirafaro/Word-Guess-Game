@@ -29,10 +29,10 @@ console.log(docUnderScore);
 let generateunderScore = () => {
     for(let i=0; i < choosenWord.length; i++) {
         underScore.push('_');
+        docUnderScore[0].innerHTML = underScore.join(' ');
     }
     return underScore;
 }
-
 // testing
 console.log(generateunderScore());
 // Get users guess
